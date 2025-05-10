@@ -17,7 +17,7 @@ import com.example.jetpack_compose_assignment_1.model.Course
 @Composable
 fun CourseCard(course: Course) {
     var isExpanded by rememberSaveable { mutableStateOf(false) }
-    val rotationAngle by animateFloatAsState(if (isExpanded) 180f else 0f, label = "rotation")
+    val rotationAngle by animateFloatAsState(if (isExpanded) 180f else 0f)
 
     Card(
         modifier = Modifier
